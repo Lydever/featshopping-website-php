@@ -18,6 +18,9 @@ bootstrap +php+mysql+vue搭建的科技风网站，主要以静态bootstrap为�
 
 
 # 效果预览
+总体预览：
+![image](https://user-images.githubusercontent.com/65069676/142754898-745b99d6-d0c5-4a29-98cb-86e8b9058c54.png)
+
 
 首页：index.html
 ![index](https://user-images.githubusercontent.com/65069676/142754735-a019f7b5-54fc-4326-9de5-43e2650b8965.png)
