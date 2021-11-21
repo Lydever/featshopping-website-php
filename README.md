@@ -14,6 +14,8 @@ bootstrap +php+mysql+vue搭建的科技风网站，主要以静态bootstrap为�
 - Vue 实现购物车
 - HTML5 运用h5 新特性
 - CSS3 运用css3新增样式属性
+- jquery
+- javasript
 
 
 
