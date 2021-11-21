@@ -20,26 +20,26 @@ bootstrap +php+mysql+vue搭建的科技风网站，主要以静态bootstrap为�
 # 效果预览
 
 首页：index.html
-![index](https://user-images.githubusercontent.com/65069676/142753625-2c078542-5f4b-4339-9e71-538882027287.jpg)
+![index](https://user-images.githubusercontent.com/65069676/142754735-a019f7b5-54fc-4326-9de5-43e2650b8965.png)
 
 
 #### 2. 研发设计模块
-![研发设计](https://user-images.githubusercontent.com/65069676/142753636-b6309f64-c19b-4278-bc57-3ea491ab8745.jpg)
+![研发设计](https://user-images.githubusercontent.com/65069676/142754768-78d16584-9b5b-4416-b819-21f3e40b840c.png)
 
 
 #### 3. 新闻资讯模块
-![新闻资讯](https://user-images.githubusercontent.com/65069676/142753663-70aa7a3d-074b-407f-9585-81f6ae4f5357.jpg)
+![新闻资讯](https://user-images.githubusercontent.com/65069676/142754798-61db52ac-0dfe-4008-96e7-d717f7a80dda.png)
 
 
 #### 4. 关于我们模块
-![关于我们](https://user-images.githubusercontent.com/65069676/142753659-b123cf18-8fe5-4273-9a4d-0b22df4a8448.jpg)
+![关于我们](https://user-images.githubusercontent.com/65069676/142754807-e1213e1d-9253-4d4a-be6a-42714045d2ee.png)
 
 
 #### 5. 产品展示模块
-![产品展示](https://user-images.githubusercontent.com/65069676/142753644-2dcdeadf-5e36-4d27-8d43-3cc8dd4db18f.jpg)
+![产品展示](https://user-images.githubusercontent.com/65069676/142754808-edf43265-f4aa-4a00-a8ac-1b493681d35f.png)
 
 
 #### 6. 购买详情模块：
-![购买详情](https://user-images.githubusercontent.com/65069676/142753658-001191cd-1e56-4014-bf36-8ae4d50ed94e.jpg)
+![购买详情](https://user-images.githubusercontent.com/65069676/142754815-0aad2488-8aff-4bd5-b01d-077c85d771fe.png)
 
 
