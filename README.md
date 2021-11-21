@@ -17,6 +17,10 @@ bootstrap +php+mysql+vue搭建的科技风网站，主要以静态bootstrap为�
 - jquery
 - javasript
 
+# 拉取代码
+```
+git clone https://github.com/Lydever/featshopping-website-php.git
+```
 
 
 # 效果预览
