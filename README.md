@@ -20,31 +20,26 @@ bootstrap +php+mysql+vue搭建的科技风网站，主要以静态bootstrap为�
 # 效果预览
 
 首页：index.html
-
-
-
-![index](D:\软件专业校课资料\web前端&后端开发实训作品\致创科技bootsrap响应式网站\致创科技bootsrap响应式网站\featshopping-website-php\preview\index.jpg)
-
+![index](https://user-images.githubusercontent.com/65069676/142753625-2c078542-5f4b-4339-9e71-538882027287.jpg)
 
 
 #### 2. 研发设计模块
-
-![研发设计](D:\软件专业校课资料\web前端&后端开发实训作品\致创科技bootsrap响应式网站\致创科技bootsrap响应式网站\featshopping-website-php\preview\研发设计.jpg)
-
+![研发设计](https://user-images.githubusercontent.com/65069676/142753636-b6309f64-c19b-4278-bc57-3ea491ab8745.jpg)
 
 
 #### 3. 新闻资讯模块
+![新闻资讯](https://user-images.githubusercontent.com/65069676/142753663-70aa7a3d-074b-407f-9585-81f6ae4f5357.jpg)
 
-![新闻资讯](D:\软件专业校课资料\web前端&后端开发实训作品\致创科技bootsrap响应式网站\致创科技bootsrap响应式网站\featshopping-website-php\preview\新闻资讯.jpg)
 
 #### 4. 关于我们模块
+![关于我们](https://user-images.githubusercontent.com/65069676/142753659-b123cf18-8fe5-4273-9a4d-0b22df4a8448.jpg)
 
-![关于我们](D:\软件专业校课资料\web前端&后端开发实训作品\致创科技bootsrap响应式网站\致创科技bootsrap响应式网站\featshopping-website-php\preview\关于我们.jpg)
 
 #### 5. 产品展示模块
+![产品展示](https://user-images.githubusercontent.com/65069676/142753644-2dcdeadf-5e36-4d27-8d43-3cc8dd4db18f.jpg)
 
-![产品展示](D:\软件专业校课资料\web前端&后端开发实训作品\致创科技bootsrap响应式网站\致创科技bootsrap响应式网站\featshopping-website-php\preview\产品展示.jpg)
 
 #### 6. 购买详情模块：
+![购买详情](https://user-images.githubusercontent.com/65069676/142753658-001191cd-1e56-4014-bf36-8ae4d50ed94e.jpg)
 
-![购买详情](D:\软件专业校课资料\web前端&后端开发实训作品\致创科技bootsrap响应式网站\致创科技bootsrap响应式网站\featshopping-website-php\preview\购买详情.jpg)
+
