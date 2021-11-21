@@ -1,0 +1,1857 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">   <!-- 引入自己的css文件-->
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>    <!-- 引入jq.js文件-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>   <!-- 引入bootstrap.js文件-->
+    <script type="text/javascript" src="js/my.effect.js"></script>     <!-- 引入自己的js文件-->
+</head>
+<body>
+	<!-- 头部导航header start -->
+    <header>
+        <nav class="navbar navbar-default navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="nav-brand">
+                        <img src="images/index/logo.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-left" id="navbar-collapse-1" style="margin-left: 150px;">
+                    <ul class="nav navbar-nav ">
+                        <li class="active"><a href="index.html">首页<span class="sr-only"></span></a></li>
+                        <li ><a href="gallary.html">商城</a></li>
+                        <li ><a href="design.html">研发设计</a></li>
+                        <li ><a href="news.html">新闻资讯</a></li>
+                        <li ><a href="contact.html">联系我们</a></li>
+                        <li ><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="list nav navbar-right">
+                    <a href="" class="btn  navbar-btn btn_login" data-toggle="modal" data-target="#login_modal">登录</a>
+                    <a href="" class="btn  navbar-btn btn_register" data-toggle="modal" data-target="#register_modal">注册</a>
+                    <img src="images/index/shopcat.png"  class="shopcat" alt=""/>
+                </div>
+            </div>
+            <!--  登录 modal start-->
+            <div class="modal fade" id="login_modal" class="bs-example-modal-sm" role="dialog" aria-labelledby="gridSystemModalLabel">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="gridSystemModalLabel">登录账号</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <h4><a href="login_register/login.html">已有账号?立即去登录</a></h4>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--  登录 modal end-->
+            <!--  注册 modal start-->
+            <div class="modal fade" id="register_modal" class=" bs-example-modal-sm" role="dialog" aria-labelledby="gridSystemModalLabel">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="gridModalLabel">注册账号</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <h4><a href="login_register/register.html">无账号?立即去注册</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- 注册 modal end-->
+        </nav>
+    </header> 
+    <!-- 头部导航header end -->
+    <!--  轮播图  start -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- 提示器 -->
+        <ol class="carousel-indicators my_slides">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- 播放幻灯片的内容 -->
+        <div class="carousel-inner my_slides" role="listbox">
+            <div class="item active">
+                <img src="images/index/banner (1).jpg">
+                <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+                <img src="images/index/banner (2).jpg" >
+                <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+                <img src="images/index/banner (3).jpg" >
+                <div class="carousel-caption"></div>
+            </div>
+        </div><!-- 播放幻灯片的内容 end -->
+        <!-- 左右ctr图标 -->
+        <a class="left carousel-control my_slides" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control my_slides" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!-- 左右ctr图标 end -->
+    </div>
+    <script>
+        $(function(){
+            $('.carousel').carousel({
+                interval: 3000
+            });
+        });
+    </script>
+    <!-- 轮播图 end -->
+
+     <!-- 中间内容部分 start    -->
+   <main>
+       <div class="content">
+           <div class="container">
+               <!--  经营 理念 -->
+               <div class="row">
+                   <div class="col-xs-6  col-md-5"></div>
+                   <div class="col-xs-6  col-sm-4 col-md-2 com_title"><h2>经营理念</h2></div>
+                   <div class="col-xs-6  col-md-5"></div>
+               </div>
+               <div class="row">
+                   <div class="col-xs-6  col-md-5"></div>
+                   <div class="col-xs-6  col-sm-4 col-md-2  com_line"></div>
+                   <div class="col-xs-6  col-md-5"></div>
+               </div>
+               <div class="row">
+                   <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3 text-center com_ideal">
+                       <p>我们秉承“以创意为武器，以创新为 使命、以市场为导向、以客户为中心”<br>的法则，以其愿景、知识和方向继续引领科技的革命，不断推陈出新！</p>
+                   </div>
+               </div>
+               <div class="row about_com">
+                   <div class="col-md-4 com_img col-sm-6 col-xs-8">
+                       <img class="img-responsive" src="images/index/home_04.jpg" alt="">
+                   </div>
+                   <div class="col-md-8 com_jieshao col-sm-8 col-xs-12">
+                       <h3>公司简介</h3>
+                       <div class="row">
+                           <p class="col-md-12 col-sm-12 col-xs-12">致创科技是一家集设计、研发、生产、销售和服务为一体的专业整体科技企业。多年来秉承“以创意为武器，以创新为使命、
+                               以市场为导向、以客户为中心”的法则，以其愿景、知识和方向继续引领科技的革命，不断推陈出新！在设计、研发、服务
+                               方面，已领先潮流设计，卓越的制作工艺和优质工程服务为宗旨，为消费者提供一个满意产品体验.....
+                           </p>
+                           <hr >
+                           <p  class="col-md-12 col-sm-12 col-xs-12">公司宗旨: <br>
+                               公司本着以人为本，视质量为产品的生命，竭诚为您提供质优、具有高性价比的产品。恪守以诚为本、以质为根、以服务
+                               取胜、以科技领先，为现代电子科技产品提供多样化的完美选择。
+                           </p>
+                       </div>
+                       <hr class="line_hr">
+                       <div class="row arow">
+                           <div class="col-md-4 com_jianjie_a col-sm-6 col-xs-12">
+                               <a class="">致创科技/开发者/设计者</a>
+                           </div>
+                           <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-xs-pull-1 com_cheked text-center">
+                               <a href="#"class="" >查看详情</a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!--  经营理念 end -->
+
+               <!--  产品展示 start -->
+               <div class="products">
+                   <div class="row">
+                       <div class="col-xs-6  col-md-5"></div>
+                       <div class="col-xs-6  col-sm-4 col-md-2 com_title"><h2>产品展示</h2></div>
+                       <div class="col-xs-6  col-md-5"></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-xs-6  col-md-5"></div>
+                       <div class="col-xs-6  col-sm-4 col-md-2  com_line"></div>
+                       <div class="col-xs-6  col-md-5"></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3 text-center com_ideal pro_p">
+                           <p>PRODUCTS DISPLAY</p>
+                       </div>
+                   </div>
+                   </div>
+                       <div class="col-md-12">
+                           <hr>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="htmleaf-container">
+               <div class="products">
+                   <div class="container-fliud">
+                       <div class="row products_row_1">
+                           <div class="col-md-3 col-sm-6 col-xs-12">
+                               <div class="product-grid">
+                                   <div class="product-image">
+                                       <a href="#" class="image">
+                                           <img class="pic-1" src="images/index/home_12.jpg">
+                                           <img class="pic-2" src="images/index/home_12.jpg">
+                                       </a>
+                                       <span class="product-sale-label">New</span>
+                                       <div class="product-button-group">
+                                           <a href="#" class="add-to-wishlist">立即购买</a>
+                                           <a href="#" class="quick-view">加入购物列车</a>
+                                       </div>
+                                   </div>
+                                   <div class="product-content">
+                                       <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                       <div class="price">$4999.00</div>
+                                       <a href="#" class="add-to-cart">查看详情</a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 col-sm-6 col-xs-12">
+                               <div class="product-grid">
+                                   <div class="product-image">
+                                       <a href="#" class="image">
+                                           <img class="pic-1" src="images/index/home_11.jpg">
+                                           <img class="pic-2" src="images/index/home_11.jpg">
+                                       </a>
+                                       <span class="product-sale-label">New</span>
+                                       <div class="product-button-group">
+                                           <a href="#" class="add-to-wishlist">立即购买</a>
+                                           <a href="#" class="quick-view">加入购物列车</a>
+                                       </div>
+                                   </div>
+                                   <div class="product-content">
+                                       <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                       <div class="price">$4999.00</div>
+                                       <a href="#" class="add-to-cart">查看详情</a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 col-sm-6 col-xs-12">
+                               <div class="product-grid">
+                                   <div class="product-image">
+                                       <a href="#" class="image">
+                                           <img class="pic-1" src="images/index/home_10.jpg">
+                                           <img class="pic-2" src="images/index/home_10.jpg">
+                                       </a>
+                                       <span class="product-sale-label">New</span>
+                                       <div class="product-button-group">
+                                           <a href="#" class="add-to-wishlist">立即购买</a>
+                                           <a href="#" class="quick-view">加入购物列车</a>
+                                       </div>
+                                   </div>
+                                   <div class="product-content">
+                                       <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                       <div class="price">$4999.00</div>
+                                       <a href="#" class="add-to-cart">查看详情</a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 col-sm-6 col-xs-12">
+                               <div class="product-grid">
+                                   <div class="product-image">
+                                       <a href="#" class="image">
+                                           <img class="pic-1" src="images/index/home_09.jpg">
+                                           <img class="pic-2" src="images/index/home_09.jpg">
+                                       </a>
+                                       <span class="product-sale-label">New</span>
+                                       <div class="product-button-group">
+                                           <a href="#" class="add-to-wishlist">立即购买</a>
+                                           <a href="#" class="quick-view">加入购物列车</a>
+                                       </div>
+                                   </div>
+                                   <div class="product-content">
+                                       <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                       <div class="price">$4999.00</div>
+                                       <a href="#" class="add-to-cart">查看详情</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="row products_row_2">
+                           <div class="col-md-3 col-sm-6 col-xs-12">
+                               <div class="product-grid">
+                                   <div class="product-image">
+                                       <a href="#" class="image">
+                                           <img class="pic-1" src="images/index/home_08.jpg">
+                                           <img class="pic-2" src="images/index/home_08.jpg">
+                                       </a>
+                                       <span class="product-sale-label">New</span>
+                                       <div class="product-button-group">
+                                           <a href="#" class="add-to-wishlist">立即购买</a>
+                                           <a href="#" class="quick-view">加入购物列车</a>
+                                       </div>
+                                   </div>
+                                   <div class="product-content">
+                                       <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                       <div class="price">$4999.00</div>
+                                       <a href="#" class="add-to-cart">查看详情</a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 col-sm-6 col-xs-12">
+                               <div class="product-grid">
+                                   <div class="product-image">
+                                       <a href="#" class="image">
+                                           <img class="pic-1" src="images/index/home_07.jpg">
+                                           <img class="pic-2" src="images/index/home_07.jpg">
+                                       </a>
+                                       <span class="product-sale-label">New</span>
+                                       <div class="product-button-group">
+                                           <a href="#" class="add-to-wishlist">立即购买</a>
+                                           <a href="#" class="quick-view">加入购物列车</a>
+                                       </div>
+                                   </div>
+                                   <div class="product-content">
+                                       <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                       <div class="price">$4999.00</div>
+                                       <a href="#" class="add-to-cart">查看详情</a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 col-sm-6 col-xs-12">
+                               <div class="product-grid">
+                                   <div class="product-image">
+                                       <a href="#" class="image">
+                                           <img class="pic-1" src="images/index/home_07.jpg">
+                                           <img class="pic-2" src="images/index/home_07.jpg">
+                                       </a>
+                                       <span class="product-sale-label">Sale</span>
+                                       <div class="product-button-group">
+                                           <a href="#" class="add-to-wishlist">立即购买</a>
+                                           <a href="#" class="quick-view">加入购物列车</a>
+                                       </div>
+                                   </div>
+                                   <div class="product-content">
+                                       <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                       <div class="price">$4999.00</div>
+                                       <a href="#" class="add-to-cart">查看详情</a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 col-sm-6 col-xs-12">
+                               <div class="product-grid">
+                                   <div class="product-image">
+                                       <a href="#" class="image">
+                                           <img class="pic-1" src="images/index/home_07.jpg">
+                                           <img class="pic-2" src="images/index/home_07.jpg">
+                                       </a>
+                                       <span class="product-sale-label">Sale</span>
+                                       <div class="product-button-group">
+                                           <a href="#" class="add-to-wishlist">立即购买</a>
+                                           <a href="#" class="quick-view">加入购物列车</a>
+                                       </div>
+                                   </div>
+                                   <div class="product-content">
+                                       <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                       <div class="price">$4999.00</div>
+                                       <a href="#" class="add-to-cart">查看详情</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="container" id="myTabs">
+               <ul class="nav nav-tabs mytablist" role="tablist">
+                   <li class="active"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">新品发布</a></li>
+                   <li><a href="#sell" aria-controls="sell" role="tab" data-toggle="tab">热品销售</a></li>
+                   <li><a href="#phone" aria-controls="phone" role="tab" data-toggle="tab">手机</a></li>
+                   <li><a href="#computer" aria-controls="computer" role="tab" data-toggle="tab">笔记本电脑</a></li>
+                   <li><a href="#mini" aria-controls="mini" role="tab" data-toggle="tab">平板</a></li>
+                   <li><a href="#more" aria-controls="more" role="tab" data-toggle="tab">查看更多</a></li>
+               </ul>
+               <div class="tab-content" >
+                   <div  class="tab-pane active fade in active" id="news">
+                       <div class="htmleaf-container">
+                           <div class="products">
+                               <div class="container-fliud">
+                                   <div class="row products_row_1">
+                                       <div class="col-md-3 col-sm-4 col-xs-6">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_12.jpg">
+                                                       <img class="pic-2" src="images/index/home_12.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-4 col-xs-6">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_11.jpg">
+                                                       <img class="pic-2" src="images/index/home_11.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-4 col-xs-6">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_10.jpg">
+                                                       <img class="pic-2" src="images/index/home_10.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-4 col-xs-6">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_09.jpg">
+                                                       <img class="pic-2" src="images/index/home_09.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="row products_row_2">
+                                       <div class="col-md-3 col-sm-4 col-xs-6">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_08.jpg">
+                                                       <img class="pic-2" src="images/index/home_08.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-4 col-xs-6">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-4 col-xs-6">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">Sale</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-4 col-xs-6">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">Sale</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div><!--  产品展示 end -->
+                   </div>
+                   <div class="tab-pane fade" id="sell">
+                       <div class="htmleaf-container">
+                           <div class="products">
+                               <div class="container-fliud">
+                                   <div class="row products_row_1">
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_12.jpg">
+                                                       <img class="pic-2" src="images/index/home_12.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_11.jpg">
+                                                       <img class="pic-2" src="images/index/home_11.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_10.jpg">
+                                                       <img class="pic-2" src="images/index/home_10.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_09.jpg">
+                                                       <img class="pic-2" src="images/index/home_09.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="row products_row_2">
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_08.jpg">
+                                                       <img class="pic-2" src="images/index/home_08.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">Sale</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">Sale</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div><!--  产品展示 end -->
+                   </div>
+                   <div  class="tab-pane fade" id="phone">
+                       <div class="htmleaf-container">
+                           <div class="products">
+                               <div class="container-fliud">
+                                   <div class="row products_row_1">
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_12.jpg">
+                                                       <img class="pic-2" src="images/index/home_12.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_11.jpg">
+                                                       <img class="pic-2" src="images/index/home_11.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_10.jpg">
+                                                       <img class="pic-2" src="images/index/home_10.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_09.jpg">
+                                                       <img class="pic-2" src="images/index/home_09.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="row products_row_2">
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_08.jpg">
+                                                       <img class="pic-2" src="images/index/home_08.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">Sale</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">Sale</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div><!--  产品展示 end -->
+                   </div>
+                   <div  class="tab-pane fade" id="computer'">
+                       <div class="htmleaf-container">
+                           <div class="products">
+                               <div class="container-fliud">
+                                   <div class="row products_row_1">
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_12.jpg">
+                                                       <img class="pic-2" src="images/index/home_12.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_11.jpg">
+                                                       <img class="pic-2" src="images/index/home_11.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_10.jpg">
+                                                       <img class="pic-2" src="images/index/home_10.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_09.jpg">
+                                                       <img class="pic-2" src="images/index/home_09.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="row products_row_2">
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_08.jpg">
+                                                       <img class="pic-2" src="images/index/home_08.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">Sale</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">Sale</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div><!--  产品展示 end -->
+                   </div>
+                   <div  class="tab-pane fade" id="mini">
+                       <div class="htmleaf-container">
+                           <div class="products">
+                               <div class="container-fliud">
+                                   <div class="row products_row_1">
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_12.jpg">
+                                                       <img class="pic-2" src="images/index/home_12.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_11.jpg">
+                                                       <img class="pic-2" src="images/index/home_11.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_10.jpg">
+                                                       <img class="pic-2" src="images/index/home_10.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_09.jpg">
+                                                       <img class="pic-2" src="images/index/home_09.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="row products_row_2">
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_08.jpg">
+                                                       <img class="pic-2" src="images/index/home_08.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">Sale</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">Sale</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div><!--  产品展示 end -->
+                   </div>
+                   <div  class="tab-pane fade" id="more'">
+                       <div class="htmleaf-container">
+                           <div class="products">
+                               <div class="container-fliud">
+                                   <div class="row products_row_1">
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_12.jpg">
+                                                       <img class="pic-2" src="images/index/home_12.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_11.jpg">
+                                                       <img class="pic-2" src="images/index/home_11.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_10.jpg">
+                                                       <img class="pic-2" src="images/index/home_10.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_09.jpg">
+                                                       <img class="pic-2" src="images/index/home_09.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="row products_row_2">
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_08.jpg">
+                                                       <img class="pic-2" src="images/index/home_08.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">New</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">Sale</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-3 col-sm-6 col-xs-12">
+                                           <div class="product-grid">
+                                               <div class="product-image">
+                                                   <a href="#" class="image">
+                                                       <img class="pic-1" src="images/index/home_07.jpg">
+                                                       <img class="pic-2" src="images/index/home_07.jpg">
+                                                   </a>
+                                                   <span class="product-sale-label">Sale</span>
+                                                   <div class="product-button-group">
+                                                       <a href="#" class="add-to-wishlist">立即购买</a>
+                                                       <a href="#" class="quick-view">加入购物列车</a>
+                                                   </div>
+                                               </div>
+                                               <div class="product-content">
+                                                   <h3 class="title"><a href="#">摄像头，显示屏，性能，样样如pro 如其名</a></h3>
+                                                   <div class="price">$4999.00</div>
+                                                   <a href="#" class="add-to-cart">查看详情</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div><!--  产品展示 end -->
+                   </div>
+               </div>
+           </div>
+           <script>
+               $(function(){
+                   $('#myTabs a').click(function (e) {
+                       e.preventDefault();
+                       $(this).tab('show');
+                   });
+               });
+           </script>
+           <!--  产品展示 end -->
+
+           <!--  设计流程 start-->
+           <div class="design">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xs-6  col-md-5"></div>
+                       <div class="col-xs-6  col-sm-4 col-md-2 com_title"><h2>设计流程</h2></div>
+                       <div class="col-xs-6  col-md-5"></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-xs-6  col-md-5"></div>
+                       <div class="col-xs-6  col-sm-4 col-md-2  com_line"></div>
+                       <div class="col-xs-6  col-md-5"></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3 text-center com_ideal">
+                           <p><em>追求创新、注重细节、 永不放弃、博弈乐趣、顾客至上、为您着想、让您无悔！</em></p>
+                       </div>
+                   </div>
+                   <div class="design-content">
+                       <div class="row">
+                           <div class="col-md-4">
+                               <div class="media ">
+                                   <div class="media-left media-middle ">
+                                       <a href="#">
+                                           <img class="media-object" src="images/index/des_icon (1).jpg" alt="...">
+                                       </a>
+                                   </div>
+                                   <div class="media-body media-list">
+                                       <h4 class="media-heading">工业设计 </h4>
+                                       <p>ID(Industry Design) 包括手机的外观、材质、手感、颜色配搭，主要界面的实现与及色彩等方面的设计。</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <div class="media">
+                                   <div class="media-left media-middle">
+                                       <a href="#">
+                                           <img class="media-object" src="images/index/des_icon (2).jpg" alt="...">
+                                       </a>
+                                   </div>
+                                   <div class="media-body">
+                                       <h4 class="media-heading">结构设计 </h4>
+                                       <p>MD(Mechanical Design) 手机的前壳、后壳、手机的摄像镜头位置的选择，固定的方式等工艺都非常熟识。</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <div class="media">
+                                   <div class="media-left media-middle">
+                                       <a href="#">
+                                           <img class="media-object" src="images/index/des_icon (3).jpg" alt="...">
+                                       </a>
+                                   </div>
+                                   <div class="media-body">
+                                       <h4 class="media-heading">硬件设计  </h4>
+                                       <p>HW(Hardware) 硬件主要设计电路以及天线，而HW是要和MD保持经常性的沟通。 </p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <hr/>
+                       <div class="row">
+                           <div class="col-md-4">
+                               <div class="media">
+                                   <div class="media-left media-middle ">
+                                       <a href="#">
+                                           <img class="media-object" src="images/index/des_icon (4).jpg" alt="...">
+                                       </a>
+                                   </div>
+                                   <div class="media-body">
+                                       <h4 class="media-heading">软件设计 </h4>
+                                       <p>SW(Software) 手机操作界面的模式，经常看到的手机九官格操作菜单的实现，这都是SW设计的范畴。</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <div class="media">
+                                   <div class="media-left media-middle">
+                                       <a href="#">
+                                           <img class="media-object" src="images/index/des_icon (5).jpg" alt="...">
+                                       </a>
+                                   </div>
+                                   <div class="media-body">
+                                       <h4 class="media-heading">项目管理 </h4>
+                                       <p>TPM (Technologly Of Project Management)， 专门管技术的PM，而普通的PM，只管理项目的进度各协调工作.</p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                               <div class="media">
+                                   <div class="media-left media-middle">
+                                       <a href="#">
+                                           <img class="media-object" src="images/index/des_icon (6).jpg" alt="...">
+                                       </a>
+                                   </div>
+                                   <div class="media-body">
+                                       <h4 class="media-heading">资源开发</h4>
+                                       <p>不停地去挖掘新的资源，如新材质、新的手机组件、测试器材等，当手机开始试产时，保证生产线上所需要的所有生产物料齐备。 </p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="desgin-team">
+                       <div class="row desgin-team">
+                           <div class="col-md-7">
+                               <div class="caption">
+                                   <h4>创新、 细节、 探索、 满意！</h4>
+                                   <h3>研发团队/鹿意TEAM</h3>
+                                   <p>鹿意团队致力于探求与其时代精神相呼应的空间表达的新形式,鹿意在研发设计创新与设计品质方面的贡献是21世纪世界设计领域中最重要的成就之一.
+                                       总部位于北京和纽约,追求创新、勇于挑战的文化氛围吸引了一大批精英以及世界各地睿智且富有雄心的客户。共振拥有300人的顶级科技研发,设计
+                                       团队,5000平米的独栋办公楼,鹿意一系列作品在不断突破传统审美法则.....
+                                   </p>
+                                   <hr width="50px">
+                                   <a href="#" style="color: #000;">开发者/艺鹿/team</a>
+                               </div>
+                           </div>
+                           <div class="col-md-5">
+                               <a href="#" class="thumbnail">
+                                   <img src="images/index/home_32.jpg" alt="致创科技">
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+               </div> <!-- design<container-->
+           </div>
+           <!--  设计流程 end-->
+
+           <!-- 新闻资讯 start-->
+           <div class="news">
+               <div class="container">
+                   <div class="new-title">
+                       <div class="row">
+                           <div class="col-xs-6  col-md-5"></div>
+                           <div class="col-xs-6  col-sm-4 col-md-2 com_title"><h2>新闻资讯</h2></div>
+                           <div class="col-xs-6  col-md-5"></div>
+                       </div>
+                       <div class="row">
+                           <div class="col-xs-6  col-md-5"></div>
+                           <div class="col-xs-6  col-sm-4 col-md-2  com_line"></div>
+                           <div class="col-xs-6  col-md-5"></div>
+                       </div>
+                       <div class="row">
+                           <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3 new_p com_ideal">
+                               <p><em>NEWS CENTER</em></p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="new-content">
+                       <div class="row">
+                           <div class="col-md-3 col-sm-4 col-xs-6">
+                               <div class="thumbnail">
+                                   <a href="#">
+                                       <img src="images/index/new (1).jpg" alt="">
+                                   </a>
+                                   <div class="caption">
+                                       <h4>公司将于6月22日开启WWDC20开发者大会活动</h4>
+                                       <span>来自</span>
+                                       <a href="">新闻中心</a>
+                                       <span class="new-date">2020-06-01</span>
+                                       <p>昨日晚间公布了2020年WWDC活动的开始时间，本次WWDC20将于6月22日开始，开发者大会活动：仅在线上举办，免费开放
+                                       </p>
+                                       <p><a href="#" class="btn btn-primary btn-news" >查看新闻</a></p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 col-sm-4 col-xs-6">
+                               <div class="thumbnail">
+                                   <a href="#">
+                                       <img src="images/index/new (2).jpg" alt="">
+                                   </a>
+                                   <div class="caption">
+                                       <h4>公司将于6月22日开启WWDC20开发者大会活动</h4>
+                                       <span>来自</span>
+                                       <a href="">新闻中心</a>
+                                       <span class="new-date">2020-06-01</span>
+                                       <p>昨日晚间公布了2020年WWDC活动的开始时间，本次WWDC20将于6月22日开始，开发者大会活动：仅在线上举办，免费开放
+                                       </p>
+                                       <p><a href="#" class="btn btn-primary btn-news">查看新闻</a></p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 col-sm-4 col-xs-6">
+                               <div class="thumbnail">
+                                   <a href="#">
+                                       <img src="images/index/new (3).jpg" alt="">
+                                   </a>
+                                   <div class="caption">
+                                       <h4>公司将于6月22日开启WWDC20开发者大会活动</h4>
+                                       <span>来自</span>
+                                       <a href="">新闻中心</a>
+                                       <span class="new-date">2020-06-01</span>
+                                       <p>昨日晚间公布了2020年WWDC活动的开始时间，本次WWDC20将于6月22日开始，开发者大会活动：仅在线上举办，免费开放
+                                       </p>
+                                       <p><a href="#" class="btn btn-primary btn-news">查看新闻</a></p>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-3 col-sm-4 col-xs-6">
+                               <div class="thumbnail">
+                                   <a href="#">
+                                       <img src="images/index/new (2).jpg" alt="">
+                                   </a>
+                                   <div class="caption">
+                                       <h4>公司将于6月22日开启WWDC20开发者大会活动</h4>
+                                       <span>来自</span>
+                                       <a href="">新闻中心</a>
+                                       <span class="new-date">2020-06-01</span>
+                                       <p>昨日晚间公布了2020年WWDC活动的开始时间，本次WWDC20将于6月22日开始，开发者大会活动：仅在线上举办，免费开放
+                                       </p>
+                                       <p><a href="#" class="btn btn-primary btn-news">查看新闻</a></p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!-- 新闻资讯 end -->
+
+           <!--联系我们 contact  start-->
+           <div class="contacts">
+               <div class="container">
+                   <div class="new-title">
+                       <div class="row">
+                           <div class="col-xs-6  col-md-5"></div>
+                           <div class="col-xs-6  col-sm-4 col-md-2 com_title"><h2>联系我们</h2></div>
+                           <div class="col-xs-6  col-md-5"></div>
+                       </div>
+                       <div class="row">
+                           <div class="col-xs-6  col-md-5"></div>
+                           <div class="col-xs-6  col-sm-4 col-md-2  com_line"></div>
+                           <div class="col-xs-6  col-md-5"></div>
+                       </div>
+                       <div class="row">
+                           <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3 new_p com_ideal">
+                               <p><em>CONTACT US</em></p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="contact-content">
+                   <div class="container">
+                       <div class="row contacts-icon">
+                           <div class="col-md-4">
+                               <button type="button" class="btn btn-default btn-lg">
+                                   <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                               </button>
+                               <a>400-997-3454</a>
+                           </div>
+                           <div class="col-md-4 midd">
+                               <button type="button" class="btn btn-default btn-lg">
+                                   <span class="glyphicon glyphicon-map-marker glyphicon1" ></span>
+                               </button>
+                               <a>北京市海定区1001号科技园</a>
+                           </div>
+                           <div class="col-md-4">
+                               <button type="button" class="btn btn-default btn-lg">
+                                   <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                               </button>
+                               <a>zhichuang@126.com</a>
+                           </div>
+                       </div>
+                       <div class="row contacts-inpt">
+                           <div class="col-md-4">
+                               <input type="text" class="form-control" name="" value="* 姓名/NAME">
+                           </div>
+                           <div class="col-md-4">
+                               <input type="text" class="form-control" value="* 邮箱地址/EMAIL">
+                           </div>
+                           <div class="col-md-4">
+                               <input type="text" class="form-control" value="* 需求/SUBJECT">
+                           </div>
+                       </div>
+                       <div class="row contacts-areatext ">
+                           <label style="color: white">内容/CONTENT:</label>
+                           <textarea class="form-control" cols="100" rows="10" ></textarea>
+                       </div>
+                       <div class="row contacts-areatext ">
+                           <div class="col-md-2 mysubmit">
+                               <input type="submit" value="提交"/>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!--联系我们 contact end -->
+
+           <!-- 合作品牌 start-->
+           <div class="brands">
+               <div class="container">
+                   <div class="new-title">
+                       <div class="row">
+                           <div class="col-xs-6  col-md-5"></div>
+                           <div class="col-xs-6  col-sm-4 col-md-2 com_title"><h2>合作品牌</h2></div>
+                           <div class="col-xs-6  col-md-5"></div>
+                       </div>
+                       <div class="row">
+                           <div class="col-xs-6  col-md-5"></div>
+                           <div class="col-xs-6  col-sm-4 col-md-2  com_line"></div>
+                           <div class="col-xs-6  col-md-5"></div>
+                       </div>
+                       <div class="row">
+                           <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3 new_p com_ideal">
+                               <p><em>Cooperative brand</em></p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="brand-content">
+                       <div class="row">
+                           <div class="col-md-3">
+                               <div class="thumbnail">
+                                   <img src="images/index/brand (1).jpg" alt="">
+                               </div>
+                           </div>
+                           <div class="col-md-3">
+                               <div class="thumbnail">
+                                   <img src="images/index/brand (2).jpg" alt="">
+                               </div>
+                           </div>
+                           <div class="col-md-3">
+                               <div class="thumbnail">
+                                   <img src="images/index/brand (3).jpg" alt="">
+                               </div>
+                           </div>
+                           <div class="col-md-3">
+                               <div class="thumbnail">
+                                   <img src="images/index/brand (4).jpg" alt="">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="row col-md-offset-2">
+                           <div class="col-md-3">
+                               <div class="thumbnail">
+                                   <img src="images/index/brand (5).jpg" alt="">
+                               </div>
+                           </div>
+                           <div class="col-md-3">
+                               <div class="thumbnail">
+                                   <img src="images/index/brand (6).jpg" alt="">
+                               </div>
+                           </div>
+                           <div class="col-md-3">
+                               <div class="thumbnail">
+                                   <img src="images/index/brand (7).jpg" alt="">
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!--合作品牌 end -->
+
+       </div> <!--content-->
+   </main>
+	 <!-- 中间内容部分 end   -->
+
+	<!-- footer 部分 start -->
+	<footer>
+		<div class="nav-list">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 col-xs-1">
+                        <h4>关于公司</h4>
+                        <ul>
+                            <li><a href="#">企业简介</a></li>
+                            <li><a href="#">品牌简介</a></li>
+                            <li><a href="#">品牌荣盛</a></li>
+                            <li><a href="#">品牌文化</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-xs-1">
+                        <h4>订单服务</h4>
+                        <ul>
+                            <li><a href="#">购买指南</a></li>
+                            <li><a href="#">支付方式</a></li>
+                            <li><a href="#">合作物流</a></li>
+                            <li><a href="#">发货时间</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-xs-1">
+                        <h4>服务支持</h4>
+                        <ul>
+                            <li><a href="#">售后服务</a></li>
+                            <li><a href="#">申请退换</a></li>
+                            <li><a href="#">上门服务</a></li>
+                            <li><a href="#">授权商家</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-xs-1">
+                        <h4>关于我们</h4>
+                        <ul>
+                            <li><a href="#">人才理念</a></li>
+                            <li><a href="#">经营理念</a></li>
+                            <li><a href="#">联系方式</a></li>
+                            <li><a href="#">集团战略</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-xs-1">
+                        <h4>新闻中心</h4>
+                        <ul>
+                            <li><a href="#">研发中心</a></li>
+                            <li><a href="#">行业新闻</a></li>
+                            <li><a href="#">最新资讯</a></li>
+                            <li><a href="#">国际时报</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-xs-2">
+                        <div class="abtn workdate">
+                            <a href="#" class="text-center">联系客服</a>
+                        </div>
+                        <h3>400 997-3454</h3>
+                        <p >周一至周日9:00-18:00(节假日除外)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copryright">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 col-xs-4 col-md-offset-2 col-xs-offset-4">
+                        <span class="copry">Copryright 2020 软件2班李映霞 1830226 all right Reserved 李软件工作室 </span>
+                        <a href="#">| 法律声明 | 隐私条款</a>
+                        <p class="copry">粤备xxxxxxx号  公安备xxxxxx号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</footer>
+	<!-- footer 部分 end -->
+
+
+</body>
+</html>

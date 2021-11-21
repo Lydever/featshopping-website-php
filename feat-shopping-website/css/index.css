@@ -1,0 +1,559 @@
+/*
+css document
+author:liyingxia
+
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.btn_register,.btn_login{
+    background-color: #222222;
+    color: rgb(131, 131, 131);
+}
+@media (max-width:768px){
+    .list{
+        float: left;
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+    .list li{
+        float: left;
+        top: 0;
+        left: 50%;
+    }
+}
+.navbar{
+    background-color:black;
+}
+.navbar-collapse,.navbar-right{
+    margin-top:7px;
+}
+.navbar-right img{
+    width: 20px;
+    height: 20px;
+}
+.navbar-nav li a,.navbar-right a{
+    color: #fff;
+    font-size: 16px;
+}
+.navbar {
+    border-radius: 0px;
+}
+/* slides */
+.my_slides{
+    transform: translate(0px,-20px);
+}
+
+
+
+/* 公司简介 */
+.com_title {
+    margin: auto;
+}
+.com_line{
+    border-bottom: black 1px solid;
+    width:50px;
+    height:18px;
+    margin-left:50px;
+}
+.com_ideal{
+    transform: translate(-100px,0);
+}
+.com_ideal p{
+    margin-top: 18px;
+    text-align: center;
+}
+
+
+@media (max-width:768px){
+    .com_line,.com_title{
+       transform: translate(-70px,0);
+    }
+    .com_ideal{
+        margin-left:100px;
+    }
+}
+.about_com{
+    margin: 30px auto;
+}
+
+.about_img{
+    margin-right: 25px;
+}
+.com_jieshao{
+    width: 700px;
+    margin-left:60px;
+}
+.com_jieshao h3{
+    margin-bottom: 40px;
+}
+.about_com .arow{
+    width: 700px;
+}
+.com_img{
+    margin-top: 30px;
+}
+.about_com .com_jieshao .line_hr{
+    border:none;
+    background-color:#0e69e6;
+    width: 50px;
+    height: 1px;
+}
+.about_com .com_jieshao  .arow .com_cheked{
+    width: 140px;
+    height: 30px;
+    border: #303030 1px solid;
+    transform: translate(70px,0);
+}
+.about_com .com_jieshao .arow .com_cheked a{
+   text-align: center;
+    line-height: 30px;
+    color: #303030;
+}
+.about_com .com_jieshao .arow .com_cheked:hover{
+    background-color:#0e69e6 ;
+    box-shadow: 4px 4px 8px rgb(0,0,0,0.5);
+    transition: all 1s;
+    border:none;
+}
+.about_com .com_jieshao .arow .com_cheked a:hover{
+    color: rgb(255,255,255);
+    transition: all 1s;
+}
+.about_com .com_jieshao .com_jianjie_a{
+    margint-top:20px;
+    color: #303030;
+}
+.about_com .com_jieshao .com_jianjie_a a{
+    color: black;
+}
+@media (max-width:768px){
+    .about_com .com_jieshao  .arow .com_cheked{
+        width: 140px;
+        height: 30px;
+        border: #303030 1px solid;
+    }
+    .com_jieshao{
+        width: 460px;
+        margin-left:10px;
+    }
+
+}
+/* 产品展示*/
+.products{
+    margin:15px auto;
+}
+.pro_p{
+    font: italic 14px "Source Han Sans CN Regular";
+    text-align: center;
+}
+
+.products{
+    padding: 50px 0;
+    background: #fff;
+}
+.product-grid{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.product-grid .product-image{
+    position: relative;
+    overflow: hidden;
+}
+.product-grid .product-image a.image{
+    display: block;
+}
+.product-grid .product-image img{
+    width: 100%;
+    height: auto;
+}
+.product-image .pic-1{
+    backface-visibility: hidden;
+    transition: all .5s ease 0s;
+}
+.product-grid .product-image:hover .pic-1{
+    opacity: 0;
+    transform: translateX(-50%);
+}
+.product-image .pic-2{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: all .5s ease 0s;
+}
+.product-grid .product-image:hover .pic-2{
+    opacity: 1;
+    left: 0;
+}
+.product-grid .product-sale-label{
+    color: #fff;
+    background: #6aaafa;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 3px 10px 10px 3px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.product-grid .product-button-group{
+    font-size: 0;
+    width: 100%;
+    opacity: 0;
+    transform: perspective(600px) translateY(15px) rotateX(90deg);
+    transform-origin: bottom center;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    transition: all 0.3s ease 0.1s;
+}
+.product-grid:hover .product-button-group{
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+.product-grid .product-button-group a{
+    color: #fff;
+    background: #066be9;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    width: calc(50% - 4px);
+    padding: 10px 5px;
+    margin: 0 2px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+.product-grid .product-button-group a:hover{
+    background-color: black;
+}
+.product-grid .product-content{
+    padding: 12px 0 0;
+    position: relative;
+}
+.product-grid .title{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 0 5px;
+}
+.product-grid .title a{
+    color: #161616;
+    transition: all 0.5s ease;
+}
+.product-grid .title a:hover{
+    color: #b79b6c;
+}
+.product-grid .price{
+    color: #b79b6c;
+    font-size: 18px;
+    font-weight: 600;
+}
+.product-grid .price span{
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: line-through;
+    margin-right: 2px;
+}
+.product-grid:hover .price{
+    opacity: 0;
+}
+.product-grid .add-to-cart{
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.3s linear 0s;
+}
+.product-grid{
+    margin-bottom: 30px;
+}
+.product-grid .add-to-cart:hover{
+    color: #b79b6c;
+    text-decoration: underline;
+}
+.product-grid:hover .add-to-cart{
+    opacity: 1;
+    bottom: 2px;
+}
+@media screen and (max-width:990px){
+    .product-grid{
+        margin: 0 0 30px;
+    }
+}
+
+
+/* 设计流程 */
+.design .design-content{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.design .design-team{
+    height: 400px;
+    width: 1920px;
+    background:url(../images/index/bg.jpg) no-repeat;
+}
+.design .design_title{
+    transform: translate(0px,-100px;);
+}
+.desgin .com_ideal p{
+    margin-top: 20px;
+    font-style: italic;
+}
+.design .media-list{
+    margin-top: 20px;
+}
+.design .col-md-4{
+
+}
+.design .media .media-left img{
+}
+.desgin .desgin-team a{
+    color: #000;
+}
+
+/* 新闻资讯*/
+.new_p{
+transform: translate(-120px,0px);
+}
+.new-content .new-date{
+    margin-left:60px;
+}
+.new-content p{
+    margin-top: 20px;
+}
+.new-content .btn-news{
+    border-radius: 20px;
+    background-color: #096ce8;
+}
+/* 联系我们 */
+
+.contacts .contact-content{
+    position:relative;
+    height: 700px;
+    width: 100%;
+    background: url(../images/index/home_66.jpg) no-repeat;
+}
+.contacts .contact-content .row{
+    position:absolute;
+    top: 10%;
+    width: 80%;
+    height: 120px;
+    left: 10%;
+}
+.contacts .contact-content .contacts-icon a{
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+}
+.contacts .contact-content .contacts-icon button{
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius:30px ;
+    height: 60px;
+    width: 60px;
+    border: white 1px solid;
+}
+.contacts .contact-content .contacts-icon button glyphicon1{
+    color: red;
+}
+.contacts .contact-content .contacts-inpt{
+    position:absolute;
+    top: 30%;
+    width: 80%;
+    bottom: 20%;
+    height: 80px;
+    left: 10%;
+}
+.contacts .contact-content .contacts-areatext{
+    position:absolute;
+    top: 50%;
+    width: 80%;
+    bottom: 20%;
+    height: 50px;
+    left: 10%;
+}
+.contacts .contact-content .contacts-areatext textarea{
+    border-bottom: white 1px solid;
+}
+
+.contacts .contacts-inpt input[type="text"]{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    border-radius: 0px;
+    display: inline;
+    font-size: 14px;
+}
+ .contacts .contacts-areatext textarea{
+     border: none;
+     border-bottom: 1px solid #fff;
+     border-color: #fff;
+     background: transparent;
+     resize: none;
+     color: #fff;
+     width: 100%;
+     border-radius: 0px;
+     font-size: 14px;
+ }
+.contacts .mysubmit{
+    border: 1px solid #fff;
+    border-color: #fff;
+    resize: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 0px;
+    font-size: 14px;
+    transform: translate(0px,270px);
+}
+.contacts .mysubmit input[type="submit"]{
+   background: none;
+    border: none;
+    color: white;
+    display: block;
+    line-height: 30px;
+    align-content: center;
+    transform: translate(45px,0px);
+}
+
+@media (max-width:768px){
+    .contacts .contact-content .contacts-icon {
+        position:absolute;
+        top:2%;
+        width: 80%;
+        height: 100px;
+        left: 10%;
+    }
+    .contacts .contact-content .contacts-icon a {
+       font-size: 16px;
+    }
+    .contacts-icon .midd{
+        margin: 10px auto;
+    }
+}
+
+/*合作品牌*/
+.brands .brand-content .row{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* footer导航 */
+/* footer导航 */
+.nav-list{
+    background-color: #e8e7e7;
+    height: 220px;
+}
+.nav-list .col-md-2{
+    margin-top: 40px;
+}
+
+.nav-list ul {
+    list-style-type: none;
+}
+
+.nav-list ul li{
+    margin: 5px;
+}
+
+.nav-list ul li a{
+    color:black;
+}
+
+.nav-list ul li a:hover{
+    color: #096ce8;
+}
+
+.nav-list .row{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.nav-list .abtn{
+    width: 150px;
+    border-radius: 0px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    background-color:#096ce8;
+}
+
+.nav-list .abtn a{
+    font-size: 18px;
+    color: #fff;
+}
+
+.nav-list .workdate p{
+    color: black;
+}
+
+.copryright{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+.copryright .row{
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.copryright .row a{
+    color: #096ce8;
+}
+
+.copry{
+    color: white;
+}
+
+@media screen and (max-width:768px){
+    .myfooter{
+        display: none;
+    }
+
+    .con .myul li{
+        float: left;
+    }
+
+    .copryright{
+        height: 80px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

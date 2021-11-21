@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>设计研发</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/design.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/my.effect.js"></script>
+</head>
+<body>
+<!-- 头部导航header start -->
+<header>
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="nav-brand">
+                    <img src="images/index/logo.png">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-left" id="navbar-collapse-1" style="margin-left: 150px;">
+                <ul class="nav navbar-nav ">
+                    <li ><a href="index.html">首页<span class="sr-only"></span></a></li>
+                    <li ><a href="gallary.html">商城</a></li>
+                    <li class="active"><a href="design.html">研发设计</a></li>
+                    <li ><a href="news.html">新闻资讯</a></li>
+                    <li ><a href="contact.html">联系我们</a></li>
+                    <li ><a href="about.html">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="list nav navbar-right">
+                <a href="" class="btn  navbar-btn btn_login" data-toggle="modal" data-target="#login_modal">登录</a>
+                <a href="" class="btn  navbar-btn btn_register" data-toggle="modal" data-target="#register_modal">注册</a>
+                <img src="images/index/shopcat.png"  class="shopcat" alt="">
+            </div>
+        </div>
+        <!--  登录 modal start-->
+        <div class="modal fade" id="login_modal" class="bs-example-modal-sm" role="dialog" aria-labelledby="gridSystemModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="gridSystemModalLabel">登录账号</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <h4><a href="login_register/login.html">已有账号?立即去登录</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--  登录 modal end-->
+        <!--  注册 modal start-->
+        <div class="modal fade" id="register_modal" class=" bs-example-modal-sm" role="dialog" aria-labelledby="gridSystemModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="gridModalLabel">注册账号</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <h4><a href="login_register/register.html">无账号?立即去注册</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- 注册 modal end-->
+    </nav>
+</header>
+<!-- 头部导航header end -->
+<!--  轮播图  start -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- 提示器 -->
+    <ol class="carousel-indicators my_slides">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <!-- 播放幻灯片的内容 -->
+    <div class="carousel-inner my_slides" role="listbox">
+        <div class="item active">
+            <img src="images/index/banner (1).jpg">
+            <div class="carousel-caption"></div>
+        </div>
+        <div class="item">
+            <img src="images/index/banner (2).jpg" >
+            <div class="carousel-caption"></div>
+        </div>
+        <div class="item">
+            <img src="images/index/banner (3).jpg" >
+            <div class="carousel-caption"></div>
+        </div>
+    </div><!-- 播放幻灯片的内容 end -->
+    <!-- 左右ctr图标 -->
+    <a class="left carousel-control my_slides" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control my_slides" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <!-- 左右ctr图标 end -->
+</div>
+<script>
+    $(function(){
+        $('.carousel').carousel({
+            interval: 3000
+        });
+    });
+</script>
+<!-- 轮播图 end -->
+
+<!-- 中间内容部分 start    -->
+<div class="content">
+    <!--  设计流程 start-->
+    <div class="design">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6  col-md-5"></div>
+                <div class="col-xs-6  col-sm-4 col-md-2 com_title"><h2>设计流程</h2></div>
+                <div class="col-xs-6  col-md-5"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6  col-md-5"></div>
+                <div class="col-xs-6  col-sm-4 col-md-2  com_line"></div>
+                <div class="col-xs-6  col-md-5"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3 text-center com_ideal">
+                    <p><em>追求创新、注重细节、 永不放弃、博弈乐趣、顾客至上、为您着想、让您无悔！</em></p>
+                </div>
+            </div>
+            <div class="design-content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="media ">
+                            <div class="media-left media-middle ">
+                                <a href="#">
+                                    <img class="media-object" src="images/index/des_icon (1).jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body media-list">
+                                <h4 class="media-heading">工业设计 </h4>
+                                <p>ID(Industry Design) 包括手机的外观、材质、手感、颜色配搭，主要界面的实现与及色彩等方面的设计。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object" src="images/index/des_icon (2).jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">结构设计 </h4>
+                                <p>MD(Mechanical Design) 手机的前壳、后壳、手机的摄像镜头位置的选择，固定的方式等工艺都非常熟识。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object" src="images/index/des_icon (3).jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">硬件设计  </h4>
+                                <p>HW(Hardware) 硬件主要设计电路以及天线，而HW是要和MD保持经常性的沟通。 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="media">
+                            <div class="media-left media-middle ">
+                                <a href="#">
+                                    <img class="media-object" src="images/index/des_icon (4).jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">软件设计 </h4>
+                                <p>SW(Software) 手机操作界面的模式，经常看到的手机九官格操作菜单的实现，这都是SW设计的范畴。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object" src="images/index/des_icon (5).jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">项目管理 </h4>
+                                <p>TPM (Technologly Of Project Management)， 专门管技术的PM，而普通的PM，只管理项目的进度各协调工作.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object" src="images/index/des_icon (6).jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">资源开发</h4>
+                                <p>不停地去挖掘新的资源，如新材质、新的手机组件、测试器材等，当手机开始试产时，保证生产线上所需要的所有生产物料齐备。 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desgin-team">
+                <div class="row desgin-team">
+                    <div class="col-md-7">
+                        <div class="caption">
+                            <h4>创新、 细节、 探索、 满意！</h4>
+                            <h3>研发团队/鹿意TEAM</h3>
+                            <p>鹿意团队致力于探求与其时代精神相呼应的空间表达的新形式,鹿意在研发设计创新与设计品质方面的贡献是21世纪世界设计领域中最重要的成就之一.
+                                总部位于北京和纽约,追求创新、勇于挑战的文化氛围吸引了一大批精英以及世界各地睿智且富有雄心的客户。共振拥有300人的顶级科技研发,设计
+                                团队,5000平米的独栋办公楼,鹿意一系列作品在不断突破传统审美法则.....
+                            </p>
+                            <hr width="50px">
+                            <a href="#" style="color: #000;">开发者/艺鹿/team</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <a href="#" class="thumbnail">
+                            <img src="images/index/home_32.jpg" alt="致创科技">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- design<container-->
+    </div>
+    <!--  设计流程 end-->
+
+    <!-- 设计团队 start-->
+    <div class="htmleaf-container">
+        <div class="htmleaf-content desgin">
+            <section class="examples">
+                <div class="slider js_variablewidth variablewidth">
+                    <div class="row frame js_frame">
+                        <ul class="slides js_slides">
+                            <li class="js_slide" ><img src="images/news/news_06.jpg" ></li>
+                            <li class="js_slide" ><img src="images/news/news_14.jpg" ></li>
+                            <li class="js_slide" ><img src="images/news/news_06.jpg" ></li>
+                            <li class="js_slide" ><img src="images/news/news_25.jpg" ></li>
+                            <li class="js_slide" ><img src="images/news/news_23.jpg" ></li>
+                            <li class="js_slide" ><img src="images/news/news_25.jpg" ></li>
+                            <li class="js_slide" ><img src="images/news/news_06.jpg" ></li>
+                            <li class="js_slide" ><img src="images/news/news_13.jpg" ></li>
+                            <li class="js_slide" ><img src="images/news/news_16.jpg" ></li>
+                            <li class="js_slide" ><img src="images/news/news_14.jpg" ></li>
+                        </ul>
+                    </div>
+                    <span class="js_prev prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
+                    </span>
+                    <span class="js_next next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
+                    </span>
+                </div>
+            </section>
+            <script src="js/highlight.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+
+            <script src="js/lory.min.js"></script>
+            <script>
+                'use strict';
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    var simple           = document.querySelector('.js_simple');
+                    var variableWidth    = document.querySelector('.js_variablewidth');
+                    var multiSlides      = document.querySelector('.js_multislides');
+                    var ease             = document.querySelector('.js_ease');
+
+                    lory(variableWidth, {
+                        rewind: true
+                    });
+
+                    lory(ease, {
+                        infinite: 4,
+                        slidesToScroll: 4,
+                        slideSpeed: 300,
+                        ease: 'cubic-bezier(0.455, 0.03, 0.515, 0.955)'
+                    });
+                });
+            </script>
+            <div class="teams">
+                <div class="row col-md-6 col-xs-6 col-md-offset-3">
+                    <h2 class="text-center ">一只充满活力，富有创新思想的团队 </h2>
+                    <p class="text-center desgin_p">“生产一部手机和十万部手机是两码事 <br>
+                        生产一部手机不是在实验室内做实验那么简单， 一旦生产就是成千上万部， 要保证每一部产 <br>
+                        品的优质绝非一件简单容易的事，生产一部手机的样品和生产 10 万部手机完全是两码子事!”
+                    </p>
+                    <div class="che">
+                        <a href="#">了解生产流程</a>
+                    </div>
+                    <div class="fixclear"></div>
+                </div>
+            </div>
+            <div class="middle_banner">
+                <img src="images/desgin/banner.jpg" alt="">
+                <nav>
+                    <ul class="pager">
+                        <li><a href="#">Previous</a></li>
+                        <li><a href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+    <!-- 设计团队 end -->
+
+
+    <!--生产流程  start-->
+    <div class="desgin_flow">
+        <div class="container">
+            <div class="row">
+                <div class="co-md-6 col-xs-12 desgin_infos">
+                    <p >针对所有移动设备进行了优化</p>
+                    <h3>独特的设计,全面的响应</h3>
+                    <p class="desgin_p">工业设计师们就开始各种天马行空的构思， 甚至轮番的头脑风暴， 重绘成百上千张对
+                        手机包括手机外观、手感、材质、颜色搭配等视觉效果进行充分大胆创意设计,它的好
+                        坏直接影响着一部手机是否漂亮、经典。</p>
+                    <div class="che">
+                        <a href="###">了解更多</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/desgin/design_23.jpg" class="desgin_flow_img" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/desgin/design_27.jpg" class="desgin_flow_img" alt="">
+                </div>
+                <div class="co-md-6 col-xs-12 desgin_infos">
+                    <p >“注重细节 追求完美”</p>
+                    <h3>循序渐进,精益求精</h3>
+                    <p class="desgin_p">工业设计（ ID）追求的是视觉感光的效果，结构设计（ MD）就是力求将这种效果真实还原的方式, ID 设计确定手机的外形后， MD就来一步步去搭建这个手机内部的所有零配件。硬件主要设计电路以及天线，实现手机的配置需求,电路部分先根据配置参数制作一个放大版的 PCB主板，进行各种调试，方案可行后再浓缩做成手机主板。主板的设计又分单面布局和双面布局，单面布局意味着主板上的所有零件全部排布在一面，
+                        背面没有零件； 双面布局则是两面都有零件， 而双面布局的主板相对单面会厚一点， 但是单
+                        面主板的面积就会比双面大， 用单面还是双面的主板这就要看结构是怎么设计， 所以说硬件
+                        设计（ HW）设计的过程也是跟结构设计（ MD）协商的过程。</p>
+                    <div class="che">
+                        <a href="###">了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="co-md-6 col-xs-12 desgin_infos">
+                    <p >不停的迭代更新，开发新功能</p>
+                    <h3>迭代更新，不断优化</h3>
+                    <p class="desgin_p">软件设计（ SW）是一个无底洞的工程，硬件部分的东西可能一次开发定稿就完成了使命，但是软件开
+                        发必须不停的迭代更新，开发新功能、修复 Bug、完善稳定、开发新功能⋯⋯这样一个无限循环的过程。
+                        更多功能的实现还需要软件层面的创意， 软件设计的使命就是让现有的硬件的潜能发挥到极致，
+                        这也是软件设计的伟大之处。</p>
+                    <div class="che">
+                        <a href="###">了解更多</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/desgin/design_31.jpg" class="desgin_flow_img" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <img src="images/desgin/design_35.jpg" class="desgin_flow_img" alt="">
+                </div>
+                <div class="co-md-6 col-xs-12 desgin_infos">
+                    <p >“注重细节 追求完美”</p>
+                    <h3>质量监督,层层环扣</h3>
+                    <p class="desgin_p">QA 在手机制作中担当着质量把关的工作，项目是否可行，质量可靠性怎么样，
+                        每一个创新都需要经过 QA 的测试审核， 如果发现生产难度太大良品率低或者通过不了测试环节，
+                        那么这个方案就会被否决了。</p>
+                    <div class="che">
+                        <a href="###">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--生产流程 end -->
+
+
+    <!-- 在路上 start-->
+    <div class="onload">
+        <div class="container">
+            <div class="row col-md-8 col-xs-8 col-md-offset-2 col-xs-offset-2">
+                <h1 class="text-center">而我们,在路上</h1>
+                <hr width="100px" class="load_line text-center col-md-offset-5">
+                <p class="text-center desgin_p onload_p">“生产一部手机和十万部手机是两码事 <br>
+                    生产一部手机不是在实验室内做实验那么简单， 一旦生产就是成千上万部， 要保证每一部产 <br>
+                    品的优质绝非一件简单容易的事，生产一部手机的样品和生产 10 万部手机完全是两码子事!”
+                </p>
+                <div class="fixclear"></div>
+            </div>
+        </div>
+    </div>
+    <!--在路上 end -->
+</div> <!--content-->
+<!-- 中间内容部分 end   -->
+
+
+<!-- footer 部分 start -->
+<footer>
+    <div class="nav-list">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 col-xs-1">
+                    <h4>关于公司</h4>
+                    <ul>
+                        <li><a href="#">企业简介</a></li>
+                        <li><a href="#">品牌简介</a></li>
+                        <li><a href="#">品牌荣盛</a></li>
+                        <li><a href="#">品牌文化</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-1">
+                    <h4>订单服务</h4>
+                    <ul>
+                        <li><a href="#">购买指南</a></li>
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">合作物流</a></li>
+                        <li><a href="#">发货时间</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-1">
+                    <h4>服务支持</h4>
+                    <ul>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">申请退换</a></li>
+                        <li><a href="#">上门服务</a></li>
+                        <li><a href="#">授权商家</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-1">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">人才理念</a></li>
+                        <li><a href="#">经营理念</a></li>
+                        <li><a href="#">联系方式</a></li>
+                        <li><a href="#">集团战略</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-1">
+                    <h4>新闻中心</h4>
+                    <ul>
+                        <li><a href="#">研发中心</a></li>
+                        <li><a href="#">行业新闻</a></li>
+                        <li><a href="#">最新资讯</a></li>
+                        <li><a href="#">国际时报</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-2">
+                    <div class="abtn workdate">
+                        <a href="#" class="text-center">联系客服</a>
+                    </div>
+                    <h3>400 997-3454</h3>
+                    <p >周一至周日9:00-18:00(节假日除外)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copryright">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-xs-4 col-md-offset-2 ">
+                    <span class="copry">Copryright 2020 软件2班李映霞 1830226 all right Reserved 李软件工作室 </span>
+                    <a href="#">| 法律声明 | 隐私条款</a>
+                    <p class="copry">粤备xxxxxxx号  公安备xxxxxx号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer 部分 end -->
+
+</body>
+</html>

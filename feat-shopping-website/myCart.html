@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body>
+
+<div class="container">
+    <div id="app">
+    <div class="panel panel-warning" style="margin:30px auto; ">
+        <!-- 头部 -->
+        <div class="panel-heading">
+            <h1 style="display: inline-block;">我的购物车</h1>
+            <span>购物车商品总数
+               <span class="label label-warning" >{{message.length}}</span>
+             </span>
+        </div>
+    </div>
+    <div class="panel-body" >
+    <table class="table table-striped ">
+        <thead>
+        <tr>
+            <th>产品编号</th>
+            <th>产品名字</th>
+            <th>购买数量</th>
+            <th>产品单价</th>
+            <th>产品总价</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="(item , index) in message">
+            <td @click="addTo(index)">{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>
+                <button type="button" class="btn tn-primary" @click="subtract(index)">-</button>
+                <input type="text" v-model="item.quantity">
+                <button type="button" class="btn tn-primary " @click="add(index)">+</button>
+            </td>
+            <td>{{item.price | filtermoney}}</td>
+            <td>{{item.price*item.quantity | filtermoney}}</td>
+            <td>
+                <button type="button" class="btn btn-success" @click="">结算</button>
+                <button type="button" class="btn btn-danger" @click="del(index)">移除</button>
+            </td>
+        </tr>
+        <tr>
+            <td>总购买价</td>
+            <td>{{animatenum | filtermoney}}</td>
+            <td>总购买数量:<span class="label label-danger" >{{message.length}}</span></td>
+            <td></td>
+            <td></td>
+            <td colspan="2">
+                <button type="button" class="btn btn-success btn-sm" @click="">去结算</button>
+                <button type="button" class="btn btn-danger btn-sm" @click="empty()">清空购物车</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+        <p v-if="message.length===0">您的购物车为空</p>
+       </div>
+    </div>
+</div>
+
+
+<!--导入vue.js文件-->
+<script src="js/vue.js"></script>
+<script>
+    var vm=new Vue({
+        el:"#app",
+        data:{
+            totalPrice:0,
+            animatenum:0,
+            message:[
+                {
+                    id: 0001,
+                    name: 'iphone11',
+                    quantity:1,
+                    price: 4999
+
+                },
+
+                {
+                    id:0002,
+                    name: 'iphoneX',
+                    quantity:1,
+                    price: 3900
+
+                },
+
+                {
+                    id:0003,
+                    name: 'ZHU PLUS',
+                    quantity:2,
+                    price: 3990
+                },
+
+                {
+                    id:0004,
+                    name: 'ZHU PLUS',
+                    quantity:2,
+                    price: 3990
+                },
+
+                {
+                    id:0005,
+                    name: 'ZHU PLUS',
+                    quantity:3,
+                    price: 3990
+                }
+
+            ]
+        },
+
+        watch:{
+            toComput2:function(newValue,oldValue){
+                this.tween(newValue,oldValue);
+            }
+        },
+
+        computed:{
+            //计算总金额
+            toComput2:function(){
+                var vm=this;
+                //每次进来要重置总金额
+                vm.totalPrice=0;
+                this.message.forEach(function(mess){
+                vm.totalPrice+=parseInt(mess.price*mess.quantity);
+                })
+
+                return this.totalPrice;
+            }
+        },
+
+        filters:{
+            filtermoney:function(value){
+                return '￥'+value ;
+            }
+        },
+
+        mounted:function(){
+            this.tween('39000','0');
+        },
+
+        methods:{
+            toComput:function(){
+                var vm=this;
+                vm.message.forEach(function(mess){
+                    vm.totalPrice+=parseInt(mess.price*mess.quantity);
+                })
+
+                return vm.totalPrice;
+            },
+
+            add:function(index){
+                var vm=this;
+                vm.message[index].quantity++;
+            },
+
+            subtract:function(index){
+                var vm=this;
+                vm.message[index].quantity--;
+                if(vm.message[index].quantity<=0){
+                    if (confirm("你确定移除该商品？")) {
+                        vm.message.splice(index,1)
+                    }
+                }
+
+            },
+
+            del:function(index){
+                var vm=this;
+                if (confirm("你确定移除该商品？")) {
+                    vm.message.splice(index,1)
+                }
+            },
+
+            empty:function(){
+                var vm=this;
+                vm.message.splice(0,vm.message.length);
+            },
+
+            addTO:function(index){
+                var vm=this;
+                vm.arr[index].one++;
+            },
+
+            tween:function(newValue,oldValue){
+                var vm=this;
+                var twen=new TWEEN.Tween({animatenum:oldValue});
+                function animate() {
+                    requestAnimationFrame(animate);
+                    TWEEN.update();
+                };
+
+                twen.to({animatenum:newValue},750);
+                twen.onUpdate(function(){
+                    //toFixed();保留几位小数
+                    vm.animatenum = this.animatenum.toFixed();
+                })
+
+                twen.start();
+                animate();
+
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

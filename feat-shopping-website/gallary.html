@@ -1,0 +1,1138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel='stylesheet' href='css/gallary.css'>
+    <link rel='stylesheet' href='css/swiper.min.css'>
+    <link rel="stylesheet" href="css/details.css">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/my.effect.js"></script>
+    <title>产品展示</title>
+</head>
+<body>
+<!-- header start 部分-->
+<header>
+    <nav class="navbar navbar-default mynav">
+        <div class="container navlist">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse-1">
+                <ul class="nav navbar-nav">
+                    <li ><a href="index.html">首页</a></li>
+                    <li><a href="gallary.html">商城</a></li>
+                    <li><a href="design.html">设计研发</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">品牌故事<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">公司简介</a></li>
+                            <li><a href="about.html">关于我们</a></li>
+                            <li><a href="design.html">科技研发</a></li>
+                        </ul>
+                    </li>
+                    <li ><a href="#">新闻资讯</a></li>
+                    <li><a href="#">合作品牌</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right nav-lists">
+                    <li><button type="button" class="btn  navbar-btn btn_login" data-toggle="modal" data-target="#login_modal">登录</button></li>
+                    <li><button type="button" class="btn  navbar-btn btn_register" data-toggle="modal" data-target="#register_modal">注册</button></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我的<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="myCart.html">我的订单</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">收货地址</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="myCart.html">我的订单</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >手机版<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">电脑版</a></li>
+                            <li><a href="#">平板</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">购物车(0)</a></li>
+                    <li><a href="#"><img src="images/details/cat.png" alt=""></a></li>
+                </ul>
+            </div>
+            <script>
+
+            </script>
+            <!--  登录 modal start-->
+            <div class="modal fade" id="login_modal" class="bs-example-modal-sm" role="dialog" aria-labelledby="gridSystemModalLabel">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="gridSystemModalLabel">登录账号</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <h4><a href="login_register/login.html">已有账号?立即去登录</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--  登录 modal end-->
+            <!--  注册 modal start-->
+            <div class="modal fade" id="register_modal" class=" bs-example-modal-sm" role="dialog" aria-labelledby="gridSystemModalLabel">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="gridModalLabel">注册账号</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <h4><a href="login_register/register.html">无账号?立即去注册</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- 注册 modal end-->
+        </div>
+    </nav>
+    <nav class="navbar navbar-default ">
+        <div class="container con">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="brand" src="images/index/logo1.png">
+                </a>
+            </div>
+            <ul class="nav  myul navbar-left garrynav">
+                <li><a href="#">全部商品分类</a></li>
+                <li><a href="#">新品区</a></li>
+                <li><a href="#">热销区</a></li>
+                <li><a href="#">手机</a></li>
+                <li><a href="#">电脑</a></li>
+            </ul>
+            <form class="navbar-form navbar-right ">
+                <div class="form-group">
+                    <label for="">
+                        <input type="text" class="form-control" placeholder="搜索商品关键词" style="float: left;">
+                        <span class="input-group-btn"><button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true">
+                        </span></button></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </nav>
+</header>
+<!-- header end 部分-->
+
+<main>
+    <!--banner-->
+    <div class="banner">
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+                <a class="swiper-slide" href="#"></a>
+                <a class="swiper-slide" href="#"></a>
+                <a class="swiper-slide" href="#"></a>
+                <a class="swiper-slide" href="#"></a>
+                <a class="swiper-slide" href="#"></a>
+                <a class="swiper-slide" href="#"></a>
+            </div>
+            <!-- Add Pagination -->
+            <div class="wrap pr">
+                <div class="gallery-left pa">
+                    <h3>销售商品</h3>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var galleryTop = new Swiper('.gallery-top', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            autoplay: 5000,
+            paginationBulletRender: function(index, className) {
+                switch(index) {
+                    case 0:
+                        name = '手机';
+                        break;
+                    case 1:
+                        name = '笔记本电脑';
+                        break;
+                    case 2:
+                        name = '平板';
+                        break;
+                    case 3:
+                        name = '配件';
+                        break;
+                    case 4:
+                        name = '热门搜索';
+                        break;
+                    case 5:
+                        name = '新品发布';
+                        break;
+                    default:
+                        name = '';
+                }
+                return '<span class="' + className + '">' + name + '</span>';
+            }
+        });
+    </script>
+    <div class="products">
+    <!-- 商品推荐-->
+        <div class="container">
+            <div class="tujian" >
+                <div class="row">
+                    <div class="row pro_title">
+                        <div class="col-md-3 ">
+                            <h2>商城/新品发布</h2>
+                        </div>
+                        <div class="col-md-1 col-md-offset-8">
+                            <a href="#" style="line-height:20px;">更多商品+</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="procon">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_07.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_09.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_11.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_17.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_07.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_09.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_11.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_17.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tujian" >
+                <div class="row">
+                    <div class="row pro_title">
+                        <div class="col-md-3 ">
+                            <h2>商城/热销产品</h2>
+                        </div>
+                        <div class="col-md-1 col-md-offset-8">
+                            <a href="#">更多商品+</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="procon">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_07.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_09.jpg">
+                                </a>
+                                <span class="product-sale-label2">hot</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_11.jpg">
+                                </a>
+                                <span class="product-sale-label2">hot</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_17.jpg">
+                                </a>
+                                <span class="product-sale-label2">hot</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_07.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_09.jpg">
+                                </a>
+                                <span class="product-sale-label2">hot</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_11.jpg">
+                                </a>
+                                <span class="product-sale-label2">hot</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_17.jpg">
+                                </a>
+                                <span class="product-sale-label2">hot</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_07.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_09.jpg">
+                                </a>
+                                <span class="product-sale-label2">hot</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_11.jpg">
+                                </a>
+                                <span class="product-sale-label2">hot</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_17.jpg">
+                                </a>
+                                <span class="product-sale-label2">hot</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tujian" >
+                <div class="row">
+                    <div class="row pro_title">
+                        <div class="col-md-3 ">
+                            <h2>商城/电脑笔记本</h2>
+                        </div>
+                        <div class="col-md-1 col-md-offset-8">
+                            <a href="#">更多商品+</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="procon">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_07.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_09.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_11.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_17.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_07.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_09.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_11.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_17.jpg">
+                                </a>
+                                <span class="product-sale-label2">new</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tujian" >
+                <div class="row">
+                    <div class="row pro_title">
+                        <div class="col-md-3 ">
+                            <h2>商城/配件其他</h2>
+                        </div>
+                        <div class="col-md-1 col-md-offset-8">
+                            <a href="#">更多商品+</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="procon">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_07.jpg">
+                                </a>
+                                <span class="product-sale-label2">sell</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_09.jpg">
+                                </a>
+                                <span class="product-sale-label">sell</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_11.jpg">
+                                </a>
+                                <span class="product-sale-label">sell</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_17.jpg">
+                                </a>
+                                <span class="product-sale-label">sell</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_07.jpg">
+                                </a>
+                                <span class="product-sale-label">sell</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_09.jpg">
+                                </a>
+                                <span class="product-sale-label">sell</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_11.jpg">
+                                </a>
+                                <span class="product-sale-label">sell</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/products/products_17.jpg">
+                                </a>
+                                <span class="product-sale-label">sell</span>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="立即浏览"><i class="fas fa-search"></i></a></li>
+                                    <li><a href="#" data-tip="加入收藏"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-tip="去购买"><i class="fas fa-random"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ZHU PLUS+</a></h3>
+                                <div class="price">$4999.00</div>
+                                <a class="add-to-cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i> <span>立即购买</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+<!-- footer 部分 start -->
+<footer>
+    <div class="nav-list">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 col-xs-1">
+                    <h4>关于公司</h4>
+                    <ul>
+                        <li><a href="#">企业简介</a></li>
+                        <li><a href="#">品牌简介</a></li>
+                        <li><a href="#">品牌荣盛</a></li>
+                        <li><a href="#">品牌文化</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-1">
+                    <h4>订单服务</h4>
+                    <ul>
+                        <li><a href="#">购买指南</a></li>
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">合作物流</a></li>
+                        <li><a href="#">发货时间</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-1">
+                    <h4>服务支持</h4>
+                    <ul>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">申请退换</a></li>
+                        <li><a href="#">上门服务</a></li>
+                        <li><a href="#">授权商家</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-1">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">人才理念</a></li>
+                        <li><a href="#">经营理念</a></li>
+                        <li><a href="#">联系方式</a></li>
+                        <li><a href="#">集团战略</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-1">
+                    <h4>新闻中心</h4>
+                    <ul>
+                        <li><a href="#">研发中心</a></li>
+                        <li><a href="#">行业新闻</a></li>
+                        <li><a href="#">最新资讯</a></li>
+                        <li><a href="#">国际时报</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-2">
+                    <div class="abtn workdate">
+                        <a href="#" class="text-center">联系客服</a>
+                    </div>
+                    <h3>400 997-3454</h3>
+                    <p >周一至周日9:00-18:00(节假日除外)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copryright">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-xs-4 col-md-offset-2 ">
+                    <span class="copry">Copryright 2020 软件2班李映霞 1830226 all right Reserved 李软件工作室 </span>
+                    <a href="#">| 法律声明 | 隐私条款</a>
+                    <p class="copry">粤备xxxxxxx号  公安备xxxxxx号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer 部分 end -->
+</body>
+</html>

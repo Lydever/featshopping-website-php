@@ -1,0 +1,296 @@
+.navbar {
+    border-radius: 0px;
+}
+/*设计流程*/
+.design-content .media .media-left{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+}
+.design-content .media .media-left:hover{
+    color: #000;
+    transform: scale(1.5);
+}
+/*设计团队*/
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+* {
+    margin:0px;
+    padding:0px;
+    border:0px;
+    background:none;
+    -webkit-text-size-adjust:100%;
+}
+
+section {
+    padding: 10px 0;
+}
+
+section:nth-child(even) {
+    background: #ececec;
+}
+
+.slider {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto 40px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+    background-color: #efeeee;
+
+}
+
+.frame {
+    position: relative;
+    width:1100px;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 0;
+    left: -10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.slides{
+    margin: 0 auto;
+}
+.frame li {
+    position: relative;
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 300px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.slides {
+    display: inline-block;
+}
+
+.variablewidth li {
+    width: 380px;
+    margin-top: 30px;
+    height: 320px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.next svg, .prev svg {
+    width: 25px;
+}
+
+@media screen and (min-width: 640px ) {
+
+    .examplecode, .frame {
+        width: 580px;
+    }
+
+    .slider {
+        width: 640px;
+        margin: 0 auto 20px;
+    }
+
+    .variablewidth li {
+        width: 280px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 980px ) {
+
+    .slider {
+        width:1140px;
+        margin: 0 auto 20px;
+    }
+
+    .frame {
+        width: 880px;
+    }
+
+    .variablewidth li {
+        width:370px;
+        margin-right: 10px;
+    }
+
+}
+.desgin .desgin_p{
+    margin: 20px auto;
+    line-height:2.6rem;
+}
+.desgin .che{
+     width: 160px;
+     height: 34px;
+     background-color: black;
+     margin:30px auto;
+     text-align: center;
+     line-height: 34px;
+ }
+
+.desgin .che a{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.desgin .che:hover{
+    background-color:#257ce9;
+}
+.teams{
+    margin: 30px auto;
+}
+
+
+/*生产流程*/
+.desgin .middle_banner{
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+}
+.desgin .pager{
+    position: absolute;
+    left: 46%;
+    bottom: 9%;
+}
+
+.desgin_flow .desgin_infos{
+    margin-top: 50px;
+    width: 580px;
+    height: 360px;
+}
+.desgin_flow .desgin_infos .desgin_p{
+    margin: 15px  auto 30px;
+}
+
+.desgin_flow .desgin_infos .che{
+    margin: 50px  0;
+    width: 160px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border: black 1px solid;
+}
+
+.desgin_flow .desgin_infos .che a{
+    color: #000;
+    font-size: 16px;
+}
+.desgin_flow .desgin_flow_img{
+    margin-top: 50px;
+}
+.onload .load_line{
+    border: none;
+    margin:25px auto;
+    width: 80px;
+    height: 1px;
+    background-color: #000;
+}
+
+.onload p{
+   font-size: 16px;
+    margin: 20px auto 100px;
+    line-height: 40px;
+}
+
+
+
+/* footer导航 */
+.nav-list{
+    background-color: #e8e7e7;
+    height: 220px;
+}
+.nav-list .col-md-2{
+    margin-top: 40px;
+}
+.nav-list ul {
+    list-style-type: none;
+
+}
+.nav-list ul li{
+    margin: 5px;
+}
+.nav-list ul li a{
+    color:black;
+}
+.nav-list ul li a:hover{
+    color: #096ce8;
+}
+.nav-list .row{
+    width: 1170px;
+    margin: 0 auto;
+}
+.nav-list .abtn{
+    width: 150px;
+    border-radius: 0px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    background-color:#096ce8;
+}
+
+.nav-list .abtn a{
+    font-size: 18px;
+    color: #fff;
+}
+.nav-list .workdate p{
+    color: black;
+}
+.copryright{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+.copryright .row{
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.copryright .row a{
+    color: #096ce8;
+}
+.copry{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

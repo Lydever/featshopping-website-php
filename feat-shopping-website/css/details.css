@@ -1,0 +1,221 @@
+/*
+
+CSS doucment
+date:2020-06-02
+author:liyingxia
+
+details pager
+
+*/
+.navlist{
+    height: 50px;
+}
+.mynav{
+    height:50px;
+    background-color: black;
+}
+.nav-lists{
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-left:20px;
+}
+.nav li a {
+    position: relative;
+    display: block;
+    padding: 15px 15px;
+    line-height: 20px;
+}
+
+.nav ul {
+    padding: 0px;
+}
+.nav-lists{
+    margin: 0;
+    padding: 0;
+}
+
+.btn_register,.btn_login{
+    background-color: #222222;
+    color: rgb(131, 131, 131);
+}
+
+.con .nav {
+    height: 90px;
+    border: none;
+    background-color: white;
+}
+.navbar{
+    border: none;
+    border-radius: 0px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.navbar .myul{
+    line-height: 90px;
+    margin-top: 20px;
+}
+.mynav{
+    height:50px;
+    background-color: black;
+}
+.search{
+   border-radius: 20px;
+    width: 160px;
+    position: relative;
+ }
+.search .glyphicon{
+    transform: translate(40px,0);
+}
+hr{
+    margin: 0;
+}
+
+.sinfos{
+    margin-left: 50px;
+}
+.info-list{
+    width: 600px;
+}
+.info-list button{
+    border:#d80b0b 1px solid;
+}
+.btn_buy{
+    width: 160px;
+    height: 40px;
+    margin-right: 30px;
+    background-color:#d80b0b;
+}
+.btn_cat{
+    width: 160px;
+    height: 40px;
+    margin-right: 30px;
+    background-color: #f28607;
+}
+.btn_cat button{
+    border: none;
+    background-color: #f28607;
+    text-align: center;
+}
+.btn_buy button{
+    border: none;
+    background-color:#d80b0b;
+    text-align: center;
+}
+.btn_cat button a{
+    line-height: 40px;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn_buy button a{
+    line-height: 40px;
+    margin-left: 25px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.pingjia{
+    margin: 100px auto;
+}
+
+/* footer导航 */
+.nav-list{
+    background-color: #e8e7e7;
+    height: 220px;
+}
+.nav-list .col-md-2{
+    margin-top: 40px;
+}
+.nav-list ul {
+    list-style-type: none;
+
+}
+.nav-list ul li{
+    margin: 5px;
+}
+.nav-list ul li a{
+    color:black;
+}
+.nav-list ul li a:hover{
+    color: #096ce8;
+}
+.nav-list .row{
+    width: 1170px;
+    margin: 0 auto;
+}
+.nav-list .abtn{
+    width: 150px;
+    border-radius: 0px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    background-color:#096ce8;
+}
+.navbar {
+    border-radius: 0px;
+}
+.nav-list .abtn a{
+    font-size: 18px;
+    color: #fff;
+}
+.nav-list .workdate p{
+    color: black;
+}
+.copryright{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+.copryright .row{
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.copryright .row a{
+    color: #096ce8;
+}
+.copry{
+    color: white;
+}
+
+.buy .price{
+    background-color: #ececec;
+}
+.buy .price .pri{
+    color:#d80b0b;
+}
+.buy .price .prip{
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+@media screen and (max-width:768px){
+   .myfooter{
+       display: none;
+   }
+    .buy .price{
+        background-color: #ececec;
+        width: 350px;
+    }
+    .btn_buy{
+        width: 150px;
+        margin-right: 15px;
+        background-color:#d80b0b;
+    }
+    .btn_cat{
+        width:150px;
+        background-color: #f28607;
+    }
+    .con .myul li{
+        float: left;
+    }
+}
+
+
+
+

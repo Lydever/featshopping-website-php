@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+	<link rel="stylesheet" href="bootstrap.css" />
+	<style>
+		body{
+			background: url("../images/index/home_66.jpg") no-repeat;
+		}
+		.form-horizontal{
+			margin-left: 30px;
+		}
+		.regis{
+			margin-left: 30px;
+		}
+		h1{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+<div class="container" style="margin: 120px auto;">
+	<h1 class="text-center">用户登录</h1><br>
+	<hr width="100%">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title text-center">用户登录</h3>
+		</div>
+		<form method="post" class="form-horizontal" action="login.php">
+			<div class="panel-body form-horizontal text-center">
+				<div class="form-group">
+					<label >
+						用户名:
+						<input type="text" class="form-control" name="userName" id="userName">
+					</label>
+				</div>
+				<div class="form-group">
+					<label>
+						密码:
+						<input type="text" class="form-control" name="password" id="password">
+					</label>
+				</div>
+				<div class="form-group">
+					<label>
+						验证码:<input type="text" name="" size="8">
+						<img src="randcode_pro.php" id="code_img" name="code_img" onclick="this.src='randcode_pro.php?rand='+Math.random()" />
+						<a href="javascript:void(0)" onclick="document.getElementById('code_img').src='randcode_pro.php?r='+Math.random()">换一个</a>
+					</label>
+				</div>
+				<div class="form-group">
+		<input type="submit"  value="登录" class=" login btn btn-success " onclick="form.action='login.php'" id="login" />
+		<input type="submit" value="注册" class=" login btn btn-success " onclick="form.action='register.html'" id="register" />
+		</div>
+		</div>
+	</form>
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/*
+date:2020-06-03
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #efefef;
+}
+/*header*/
+.btn_register,.btn_login{
+    background-color: #222222;
+    color: rgb(131, 131, 131);
+}
+@media (max-width:768px){
+    .list{
+        float: left;
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+    .list li{
+        float: left;
+        top: 0;
+        left: 50%;
+    }
+}
+.navbar{
+    background-color:black;
+}
+.navbar-collapse,.navbar-right{
+    margin-top:7px;
+}
+.navbar-right img{
+    width: 20px;
+    height: 20px;
+}
+.navbar-nav li a,.navbar-right a{
+    color: #fff;
+    font-size: 16px;
+}
+/* slides */
+.my_slides{
+    transform: translate(0px,-20px);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.panel-group{
+    margin: 0px;
+}
+
+
+/*新闻list*/
+
+.thumbnail{
+    margin:10px 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.thumbnail img{
+    border-radius: 8px 8px 0px 0px ;
+}
+
+.pager1{
+    margin-right:0px;
+}
+/* footer导航 */
+.nav-list{
+    background-color: #e8e7e7;
+    height: 220px;
+}
+.nav-list .col-md-2{
+    margin-top: 40px;
+}
+
+.nav-list ul {
+    list-style-type: none;
+}
+
+.nav-list ul li{
+    margin: 5px;
+}
+
+.nav-list ul li a{
+    color:black;
+}
+
+.nav-list ul li a:hover{
+    color: #096ce8;
+}
+
+.nav-list .row{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.nav-list .abtn{
+    width: 150px;
+    border-radius: 0px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    background-color:#096ce8;
+}
+
+.nav-list .abtn a{
+    font-size: 18px;
+    color: #fff;
+}
+
+.nav-list .workdate p{
+    color: black;
+}
+
+.copryright{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+.copryright .row{
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.copryright .row a{
+    color: #096ce8;
+}
+
+.copry{
+    color: white;
+}
+
+@media screen and (max-width:768px){
+    .myfooter{
+        display: none;
+    }
+
+    .con .myul li{
+        float: left;
+    }
+
+    .copryright{
+        height: 80px;
+    }
+}
+
+.news_content p{
+    font-size: 17px;
+    line-height:1.8em;
+}
+.news_content .more ul li{
+    float: left;
+    list-style: none;
+    margin:50px 5px;
+}
